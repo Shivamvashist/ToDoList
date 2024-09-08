@@ -1,0 +1,18 @@
+
+
+.taskElement{
+    display: flex;
+    flex-direction: row;
+    width: 256px;
+}
+.taskbox{
+    flex:1;
+    background-color: black;
+}
+.task{
+    flex:8;
+
+}
+.del{
+    flex:1;
+}
