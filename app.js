@@ -35,6 +35,12 @@ function addTask(){
     }
 
 }
+let task1 = document.querySelector("input");
+task1.addEventListener('keydown',function(event){
+    if(event.key==='Enter'){
+        addTask();
+    }
+});
 
 
 function delTask(index){

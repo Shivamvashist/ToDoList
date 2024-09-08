@@ -1,4 +1,42 @@
 
+.Container1{
+    width: 300px;
+    height: 800px;
+    border: 3px solid blue;
+
+}
+
+input{
+    text-decoration: none;
+    background-color: none;
+    border: 0;
+    border-left: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 20px;
+    margin-right: 0;
+    padding: 10px;
+}
+input:focus{
+
+    outline: 0;
+}
+.addTaskBtn{
+    background-color: white;
+    border: 0;
+    border-right: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-top-Right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 0;
+    padding: 10px;
+
+
+    
+}
 
 .taskElement{
     display: flex;
@@ -6,13 +44,12 @@
     width: 256px;
 }
 .taskbox{
-    flex:1;
-    background-color: black;
+
 }
 .task{
-    flex:8;
 
 }
 .del{
-    flex:1;
+
 }
+
