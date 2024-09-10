@@ -3,7 +3,6 @@ let index=0;
 let emp = document.querySelector(".emptMsg")
 
 function addTask(){
-    
 
     // index = a.length;
     a = document.querySelectorAll(".taskElement");
@@ -59,7 +58,7 @@ task1.addEventListener('keydown',function(event){
 function delTask(index){
     let taskToDel = document.getElementById(`task-${index}`)
     taskToDel.remove();
-    
+
     a = document.querySelectorAll(".taskElement");
 
     if(a.length<1){
