@@ -1,18 +1,55 @@
+/*  #3E3343 bg
+    #332934 pallet
+    #947C99 txt
+    #DEBEE5 txt
+*/
 
+
+body{
+    margin:0;
+    background-color: #000;
+}
+.hero{
+
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+
+}
 .Container1{
-    width: 300px;
-    height: 800px;
-    border: 3px solid blue;
+    background-color: #3E3343;
+    width: 400px;
+    height: 600px;
+    border-radius: 36px;
+
+    box-shadow: 0px 0px 100px 18px #3E3343;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 
 }
 
+.addTaskContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+
 input{
+    width: 70%;
+
     text-decoration: none;
     background-color: none;
     border: 0;
-    border-left: 1px solid red;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    border-left: 1px solid rgba(0, 0, 0, 0.404);
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding-left: 20px;
@@ -20,15 +57,16 @@ input{
     padding: 10px;
 }
 input:focus{
-
     outline: 0;
 }
 .addTaskBtn{
+    
+
     background-color: white;
     border: 0;
-    border-right: 1px solid red;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    border-right: 1px solid rgba(0, 0, 0, 0.404);
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
     border-top-Right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: 0;
@@ -38,18 +76,86 @@ input:focus{
     
 }
 
+.emptMsg{
+    margin-top: 40px;
+    color: #DEBEE5 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    display: block;
+}
+
 .taskElement{
     display: flex;
-    flex-direction: row;
-    width: 256px;
+    width: 350px;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 12px;
+
+
+    background-color: #332934 ;
+    color: #DEBEE5 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.task{
+    flex: 8;
+}
+.delTask{
+    padding: 0;
+    margin: 0;
+    color: #DEBEE5 ;
+    flex: 1;
+    background-color: #332934;
+
+
+    border: none;
+}
+
+label{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-left: 6px;
+
+    border-radius: 10px;
 }
 .taskbox{
-
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
 }
-.task{
+label span::after{
+    content: "";
+    position: absolute;
+    top: -2.8px;
+    right: 1px;
+    height: 12px;
+    width: 4px;
 
+    border: 0;
+    
+
+    transform: rotate(45deg);
+    
+     
+    z-index: 1;
+    transition: ease 0.1s;
 }
-.del{
 
+input:checked ~ span::after{
+    content: "";
+    border-right: 3px solid rgb(69, 36, 131);
+    border-bottom: 3px solid rgb(111, 0, 255);
+    border-color: #d497da;
+    
 }
 
