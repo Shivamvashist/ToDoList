@@ -32,15 +32,18 @@ body{
     
     
     margin-bottom: 40px;
+    padding-bottom: 20px ;
+
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .addTaskContainer{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 input{
@@ -81,9 +84,11 @@ input:focus{
 }
 .addTaskBtn:hover{
     font-size: 14px;
+    transition: all ease 0.1s;
 }
 .addTaskBtn:active{
-    font-size: 10px;
+    font-size: 12px;
+    transition: all ease 0.13s;
 }
 
 .emptMsg{
@@ -97,7 +102,7 @@ input:focus{
 .taskElement{
     display: flex;
     width: 350px;
-    height: 32px;
+    min-height: 36px;
     align-items: center;
     justify-content: space-between;
 
@@ -115,6 +120,8 @@ input:focus{
 
 .task{
     flex: 8;
+    font-size: 16px;
+    font-weight: 500;
 }
 .delTask{
     padding: 0;
