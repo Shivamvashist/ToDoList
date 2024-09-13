@@ -36,6 +36,11 @@ body{
 
     overflow: hidden;
     overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.Container1::-webkit-scrollbar {
+    display: none;
 }
 
 .addTaskContainer{
